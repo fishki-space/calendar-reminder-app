@@ -1,25 +1,35 @@
 # Calendar and Reminder Application
 
-A simple desktop application built using Python and Tkinter that allows users to set reminders for specific dates and times.
+This is a simple desktop application built using Python and Tkinter that allows users to add and view reminders for specific dates and times.
+
+The project was created to practice object-oriented programming concepts and basic GUI development in Python.
 
 ## Features
-- Add reminders for a specific time
-- Background reminder checking
-- Local data storage using JSON
+- Add reminders with time and description
+- Background checking of reminders
+- Notification popup when a reminder time is reached
+- Local storage of reminders using a JSON file
 
-## Project Approach
-The project was first implemented as a single script.
-Later, reminder handling logic was separated into a small module to improve clarity and safety.
+## Project Structure
+- `app.py` handles the user interface and application flow
+- `reminder_manager.py` handles reminder data and file storage
+- `reminders.json` is used to store reminder information locally
 
-A background thread checks reminders, while UI updates are handled using Tkinter’s main event loop.
+The structure is kept simple to make the code easy to understand and modify.
+
+## Technologies Used
+- Python
+- Tkinter
+- JSON
 
 ## Limitations
 - Designed for single-user local use
-- Uses JSON instead of a database
+- Uses file-based storage instead of a database
 - Notification system is basic
 
 ## What I Learned
-- Tkinter GUI development
-- Background threading in Python
-- Thread-safe UI updates
-- Structuring code for better readability
+- Applying OOP concepts in a real project
+- Creating GUI applications using Tkinter
+- Handling background tasks without blocking the UI
+- Organizing code into simple, reusable components
+
